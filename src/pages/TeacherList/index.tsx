@@ -1,12 +1,15 @@
 import React from 'react';
 import PageHeader from '../../components/PageHeader';
 
+
+
 import './styles.css';
+import TeacherItem from '../../components/TeacherItem';
 
 function TeacherList() {
   return (
    <div id="page-teacher-list" className="container">
-     <PageHeader title="Estes são os proffys disponiveis" >
+     <PageHeader title="Estes são os proffys disponiveis">
       <form  id="search-teachers">
         
         <div className="input-block">
@@ -26,6 +29,10 @@ function TeacherList() {
 
       </form>
      </PageHeader>
+
+     <main>
+       <TeacherItem />
+     </main>
      
    </div>
   );
